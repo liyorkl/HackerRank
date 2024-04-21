@@ -67,9 +67,10 @@ class Result {
 
 public class Solution {
   public static void main(String[] args) throws IOException {
-    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader bufferedReader =
+        new BufferedReader(new FileReader("test/findRemainingAsteroids/input.txt"));
     BufferedWriter bufferedWriter =
-        new BufferedWriter(new FileWriter("findRemainingAsteroids/output.txt"));
+        new BufferedWriter(new FileWriter("test/findRemainingAsteroids/output.txt"));
 
     int sizeCount = Integer.parseInt(bufferedReader.readLine().trim());
 
